@@ -19,6 +19,7 @@ section {
   max-width: 1140px;
   margin: auto;
 }
+html,
 ul {
   overflow-x: hidden;
 }
