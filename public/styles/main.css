@@ -5,6 +5,10 @@ html {
   font-family: sans-serif;
   box-sizing: border-box;
 }
+.title-letter:hover {
+  color: rgb(182, 140, 35);
+  transition: all 0.8s ease;
+}
 body {
   min-height: 100%;
   width: 100%;
@@ -12,6 +16,7 @@ body {
   color: rgb(221, 221, 221);
   overflow-x: hidden;
   position: relative;
+  line-height: 1.5;
 }
 nav,
 section {
@@ -177,25 +182,60 @@ p-absolute {
   padding: 0 1em;
 }
 h5 {
-  font-size: 1rem;
+  font-size: 1.4rem;
   padding: 0 1em;
+  transition: all 1s ease;
 }
 .text-body {
   padding: 0 1.5em;
   margin-bottom: 1em;
   text-align: justify;
+  font-size: 1.2rem;
+  transition: all 1s ease;
 }
 .image-container {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  justify-content: center;
+  align-items: center;
 }
+
 .image-container img {
   max-width: 80%;
+  border: 2px solid black;
 }
-.image-container div {
+.image-container figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.signature {
+  width: 50%;
+  max-width: 20rem;
+}
+@media (min-width: 900px) {
+  .text-body {
+    font-size: 1.5rem;
+    transition: all 1s ease;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  .piece-work > h3 {
+    font-size: 2rem;
+  }
+  .piece-work > h5 {
+    font-size: 1.5rem;
+  }
+  figure {
+    width: 50%;
+    min-width: 20rem;
+  }
+  figcaption {
+    font-size: 1.4  rem;
+  }
+  .image-container {
+    flex-flow: row wrap;
+  }
 }
